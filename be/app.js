@@ -3,7 +3,9 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
+//URL直接指定で404
 var history = require('connect-history-api-fallback');
+//クロスドメインリクエスト回避
 var cors = require('cors');
 var app = express();
 
