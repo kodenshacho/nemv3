@@ -5,6 +5,13 @@ import Users from '../views/users.vue'
 // import Help from '../views/help.vue'
 // import About from '../views/about.vue'
 // import E404 from '../views/e404.vue'
+import Embed from 'v-video-embed'
+import VueYouTubeEmbed from 'vue-youtube-embed'
+Vue.use(Embed)
+Vue.use(VueYouTubeEmbed)
+Vue.use(VueYouTubeEmbed, { global: false })
+// if you want to install the component globally with a different name
+Vue.use(VueYouTubeEmbed, { global: true, componentId: 'youtube-media' })
 Vue.use(VueRouter)
 
 const routes = [
@@ -22,6 +29,16 @@ const routes = [
     path: '/help',
     name: 'help',
     component: () => import('../views/help.vue')
+  },
+  {
+    path: '/crud',
+    name: 'CRUD',
+    component: () => import('../views/crud.vue')
+  },
+  {
+    path: '/userdb',
+    name: 'userdb',
+    component: () => import('../views/userdb.vue')
   },
   {
     path: '/about',

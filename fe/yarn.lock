@@ -8388,6 +8388,13 @@ uuid@^3.3.2, uuid@^3.4.0:
   resolved "https://registry.npm.taobao.org/uuid/download/uuid-3.4.0.tgz?cache=0&sync_timestamp=1607460081656&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fuuid%2Fdownload%2Fuuid-3.4.0.tgz#b23e4358afa8a202fe7a100af1f5f883f02007ee"
   integrity sha1-sj5DWK+oogL+ehAK8fX4g/AgB+4=
 
+v-video-embed@^1.0.8:
+  version "1.0.8"
+  resolved "https://registry.yarnpkg.com/v-video-embed/-/v-video-embed-1.0.8.tgz#529b6dde745d6fbec0a3d18b98f2a8b11694ec58"
+  integrity sha512-1PyN5gSkqTB/LJDOyDm22YIUX2nx50FwV2EaWXbkR4ZyaCLBImQ3bCgMcZ3qhGtObj0Y19akzJ0u0ab4ud+bEw==
+  dependencies:
+    vue "^2.6.10"
+
 v8-compile-cache@^2.0.3:
   version "2.2.0"
   resolved "https://registry.npm.taobao.org/v8-compile-cache/download/v8-compile-cache-2.2.0.tgz?cache=0&sync_timestamp=1603909501672&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fv8-compile-cache%2Fdownload%2Fv8-compile-cache-2.2.0.tgz#9471efa3ef9128d2f7c6a7ca39c4dd6b5055b132"
@@ -8497,7 +8504,12 @@ vue-template-es2015-compiler@^1.9.0:
   resolved "https://registry.npm.taobao.org/vue-template-es2015-compiler/download/vue-template-es2015-compiler-1.9.1.tgz#1ee3bc9a16ecbf5118be334bb15f9c46f82f5825"
   integrity sha1-HuO8mhbsv1EYvjNLsV+cRvgvWCU=
 
-vue@^2.6.11:
+vue-youtube-embed@^2.2.2:
+  version "2.2.2"
+  resolved "https://registry.yarnpkg.com/vue-youtube-embed/-/vue-youtube-embed-2.2.2.tgz#e4fc27bc09ecd77488e6709f7c6694585c972d2d"
+  integrity sha512-l/EJuFMRK43AN73N+qxJnN0LB3uPl2xAghmr3dCvODWGCRWGjmGfrHaOtD93fu9J4co+CZLv1KP3akAsldC1aw==
+
+vue@^2.6.10, vue@^2.6.11:
   version "2.6.12"
   resolved "https://registry.npm.taobao.org/vue/download/vue-2.6.12.tgz?cache=0&sync_timestamp=1606946484560&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fvue%2Fdownload%2Fvue-2.6.12.tgz#f5ebd4fa6bd2869403e29a896aed4904456c9123"
   integrity sha1-9evU+mvShpQD4pqJau1JBEVskSM=

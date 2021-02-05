@@ -5,7 +5,7 @@
           <v-chip close>{{u.name}}</v-chip>
           <v-card>
             <v-img
-              src="https://cdn.vuetifyjs.com/images/cards/desert.jpg"
+              src="https://images.chosun.com/resizer/kpSz-wgp493vmqfSEETldoxPQWY=/616x0/smart/cloudfront-ap-northeast-1.images.arcpublishing.com/chosun/Y3G4QI4XJ66PUOZRL53A6JNPFQ.jpg"
               aspect-ratio="2.75"
             ></v-img>
             <v-card-title primary-title>
@@ -26,7 +26,7 @@
 
 <script>
 import axios from 'axios'
-
+/// https://v-phinf.pstatic.net/20210107_250/1609990063094JaolI_GIF/vlive_photo_1608987583490.gif?type=w1000
 export default {
   data () {
     return {

@@ -7,7 +7,7 @@ router.get('/hello', function(req, res, next) {
 });
 
 router.use('/cards', require('./cards'));
-
+router.use('/user', require('./user'))
 router.all('*', function(req, res, next) {
   next(createError(404, '그런 API 없다잉.!'));
 });

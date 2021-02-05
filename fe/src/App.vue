@@ -30,9 +30,9 @@
       <v-app-bar-nav-icon @click.stop="drawer = !drawer" />
     </v-app-bar>
 
-    <v-content>
+    <v-main>
       <router-view />
-    </v-content>
+    </v-main>
 
     <v-footer app>
       <!-- フッター -->
@@ -68,6 +68,16 @@ export default {
           icon: 'mdi-information-variant',
           title: '정보',
           url: '/about'
+        },
+        {
+          icon: 'mdi-database',
+          title: 'CRUD 테스트',
+          url: '/crud'
+        },
+        {
+          icon: 'mdi-database',
+          title: 'CRUD 사용자 테스트',
+          url: '/userdb'
         }
       ],
       miniVariant: false,
