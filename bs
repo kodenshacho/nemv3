@@ -1,0 +1,3 @@
+#!/bin/bash
+#cd be && npm start
+cd be && DEBUG=be:* npm start 

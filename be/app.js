@@ -14,7 +14,8 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 
-app.use(cors());
+if (process.env.NODE_ENV !== 'production') app.use(cors())
+
 app.use('/api', require('./routes/api'));
 app.use(history());
 app.use(express.static(path.join(__dirname, '../fe','dist')));
@@ -36,15 +37,23 @@ app.use(function(err, req, res, next) {
   res.send({msg: err.message});
 });
 
-module.exports = app;
-
 const mongoose = require('mongoose')
 const User = require('./models/users')
 
-mongoose.connect('mongodb://localhost/nemv', { useNewUrlParser: true }, (err) => {
+console.log(`${process.env.NODE_ENV} started!`)
+
+const cfg = require('../config')
+console.log(cfg)
+
+// mongoose.connect('mongodb://localhost/nemv', { useNewUrlParser: true }, (err) => {
+  mongoose.connect(cfg.dbUrl, { useNewUrlParser: true }, (err) => {  
   if (err) return console.error(err)
   console.log('mongoose connected!!!!')
 })
+
+
+module.exports = app;
+
 
 // User.deleteMany()
 //   .then((result) => {
